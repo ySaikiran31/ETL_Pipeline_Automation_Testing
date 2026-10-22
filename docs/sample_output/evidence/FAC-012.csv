@@ -1,0 +1,2 @@
+﻿column,blank_pct,tolerance_pct,blank_records,failure_reason
+customer_key,3.08,1,1539,customer_key is 3.08% blank (tolerance 1%)

@@ -1,0 +1,5 @@
+﻿column,blank_pct,tolerance_pct,blank_records,failure_reason
+distributor_name,100.0,5,50000,distributor_name is 100.0% blank (tolerance 5%)
+customer_id,3.08,1,1539,customer_id is 3.08% blank (tolerance 1%)
+customer_pan,9.93,5,4965,customer_pan is 9.93% blank (tolerance 5%)
+region_code,16.63,5,8315,region_code is 16.63% blank (tolerance 5%)

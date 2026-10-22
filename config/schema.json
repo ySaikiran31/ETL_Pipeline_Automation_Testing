@@ -1,0 +1,1010 @@
+{
+  "dist": {
+    "table": "dim_Distributor_sales",
+    "primary_key": "distributor_txn_id",
+    "columns": [
+      {
+        "name": "distributor_txn_id",
+        "sql_type": "VARCHAR(25)",
+        "type": "string",
+        "length": 25,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "sale_date",
+        "sql_type": "DATE",
+        "type": "date",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_code",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_name",
+        "sql_type": "VARCHAR(150)",
+        "type": "string",
+        "length": 150,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "customer_id",
+        "sql_type": "VARCHAR(15)",
+        "type": "string",
+        "length": 15,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "customer_pan",
+        "sql_type": "VARCHAR(10)",
+        "type": "string",
+        "length": 10,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "product_code",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "product_name_raw",
+        "sql_type": "VARCHAR(200)",
+        "type": "string",
+        "length": 200,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "product_type_raw",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "policy_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "folio_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "gross_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "commission_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "status",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "created_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "updated_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      }
+    ]
+  },
+  "cust": {
+    "table": "dim_Customer_Master",
+    "primary_key": "customer_key",
+    "columns": [
+      {
+        "name": "customer_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "customer_id",
+        "sql_type": "VARCHAR(15)",
+        "type": "string",
+        "length": 15,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "customer_pan",
+        "sql_type": "VARCHAR(10)",
+        "type": "string",
+        "length": 10,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "policy_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "first_name",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "last_name",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "gender",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "date_of_birth",
+        "sql_type": "DATE",
+        "type": "date",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "email",
+        "sql_type": "VARCHAR(100)",
+        "type": "string",
+        "length": 100,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "mobile",
+        "sql_type": "VARCHAR(15)",
+        "type": "string",
+        "length": 15,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "address_line",
+        "sql_type": "VARCHAR(200)",
+        "type": "string",
+        "length": 200,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "city",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "state",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "pincode",
+        "sql_type": "VARCHAR(10)",
+        "type": "string",
+        "length": 10,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "country",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "kyc_status",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "customer_segment",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "annual_income",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "onboarded_on",
+        "sql_type": "DATE",
+        "type": "date",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "active_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "created_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "updated_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      }
+    ]
+  },
+  "fact": {
+    "table": "Fact_Sales",
+    "primary_key": "sales_sk",
+    "columns": [
+      {
+        "name": "sales_sk",
+        "sql_type": "BIGINT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_txn_id",
+        "sql_type": "VARCHAR(25)",
+        "type": "string",
+        "length": 25,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "sale_date_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "product_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "customer_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "region_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "gross_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "net_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "commission_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "tax_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "discount_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "premium_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "sum_assured",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "units_allocated",
+        "sql_type": "DECIMAL(15,4)",
+        "type": "decimal",
+        "length": null,
+        "scale": 4,
+        "nullable": true
+      },
+      {
+        "name": "nav_at_purchase",
+        "sql_type": "DECIMAL(15,4)",
+        "type": "decimal",
+        "length": null,
+        "scale": 4,
+        "nullable": true
+      },
+      {
+        "name": "commission_pct",
+        "sql_type": "DECIMAL(6,3)",
+        "type": "decimal",
+        "length": null,
+        "scale": 3,
+        "nullable": true
+      },
+      {
+        "name": "txn_count",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_new_customer_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_high_value_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "policy_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "folio_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "status",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "src_created_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "src_updated_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "etl_run_id",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "etl_load_ts_utc",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      }
+    ]
+  },
+  "dm": {
+    "table": "dm_Distributor_Sales_Customer_360",
+    "primary_key": "dm_sk",
+    "columns": [
+      {
+        "name": "dm_sk",
+        "sql_type": "BIGINT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "sales_sk",
+        "sql_type": "BIGINT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_txn_id",
+        "sql_type": "VARCHAR(25)",
+        "type": "string",
+        "length": 25,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "policy_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "customer_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "customer_id",
+        "sql_type": "VARCHAR(15)",
+        "type": "string",
+        "length": 15,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "sale_date",
+        "sql_type": "DATE",
+        "type": "date",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "sale_date_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_code",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "distributor_name",
+        "sql_type": "VARCHAR(150)",
+        "type": "string",
+        "length": 150,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "product_code",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "product_name_raw",
+        "sql_type": "VARCHAR(200)",
+        "type": "string",
+        "length": 200,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "product_type_raw",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "product_family",
+        "sql_type": "VARCHAR(10)",
+        "type": "string",
+        "length": 10,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "product_category",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "folio_number",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "region_key",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "status",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "customer_pan",
+        "sql_type": "VARCHAR(10)",
+        "type": "string",
+        "length": 10,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "first_name",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "last_name",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "gender",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "date_of_birth",
+        "sql_type": "DATE",
+        "type": "date",
+        "length": null,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "customer_age",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "email",
+        "sql_type": "VARCHAR(100)",
+        "type": "string",
+        "length": 100,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "mobile",
+        "sql_type": "VARCHAR(15)",
+        "type": "string",
+        "length": 15,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "city",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "state",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "pincode",
+        "sql_type": "VARCHAR(10)",
+        "type": "string",
+        "length": 10,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "country",
+        "sql_type": "VARCHAR(50)",
+        "type": "string",
+        "length": 50,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "kyc_status",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "customer_segment",
+        "sql_type": "VARCHAR(20)",
+        "type": "string",
+        "length": 20,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "annual_income",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "customer_onboarded_on",
+        "sql_type": "DATE",
+        "type": "date",
+        "length": null,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "customer_active_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": true
+      },
+      {
+        "name": "gross_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "net_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "commission_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "tax_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "discount_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": false
+      },
+      {
+        "name": "premium_amount",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "sum_assured",
+        "sql_type": "DECIMAL(15,2)",
+        "type": "decimal",
+        "length": null,
+        "scale": 2,
+        "nullable": true
+      },
+      {
+        "name": "units_allocated",
+        "sql_type": "DECIMAL(15,4)",
+        "type": "decimal",
+        "length": null,
+        "scale": 4,
+        "nullable": true
+      },
+      {
+        "name": "nav_at_purchase",
+        "sql_type": "DECIMAL(15,4)",
+        "type": "decimal",
+        "length": null,
+        "scale": 4,
+        "nullable": true
+      },
+      {
+        "name": "commission_pct",
+        "sql_type": "DECIMAL(6,3)",
+        "type": "decimal",
+        "length": null,
+        "scale": 3,
+        "nullable": true
+      },
+      {
+        "name": "txn_count",
+        "sql_type": "INT",
+        "type": "int",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_new_customer_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_high_value_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_kyc_verified_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_ins_txn_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "is_mf_txn_flag",
+        "sql_type": "CHAR(1)",
+        "type": "string",
+        "length": 1,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "src_created_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "src_updated_at",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "fact_etl_run_id",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "dm_etl_run_id",
+        "sql_type": "VARCHAR(30)",
+        "type": "string",
+        "length": 30,
+        "scale": null,
+        "nullable": false
+      },
+      {
+        "name": "dm_load_ts_utc",
+        "sql_type": "DATETIME",
+        "type": "datetime",
+        "length": null,
+        "scale": null,
+        "nullable": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "20261022_080621",
+  "started": "2026-10-22 08:06:21",
+  "duration_sec": 51.5,
+  "environment": "LAB",
+  "database": "127.0.0.1:3306/python_project2",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.20348-SP0",
+  "counts": {
+    "PASS": 116,
+    "FAIL": 12,
+    "ERROR": 0,
+    "SKIPPED": 3
+  },
+  "overall": "FAIL",
+  "data_profile": {
+    "Distributor Sales file": 50000,
+    "Fact Sales file": 50000,
+    "Customer Master file": 50000,
+    "Data mart (MySQL)": 45076
+  }
+}

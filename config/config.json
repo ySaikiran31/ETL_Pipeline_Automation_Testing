@@ -1,0 +1,37 @@
+{
+  "project": {
+    "name": "Distributor Sales Data Reconciliation - QA Automation",
+    "environment": "LAB"
+  },
+  "paths": {
+    "input_dir": "data",
+    "reports_dir": "reports",
+    "logs_dir": "logs",
+    "sql_dir": "sql"
+  },
+  "files": {
+    "dist": {"label": "Distributor Sales", "name": "dim_Distributor_sales_50k.json", "format": "json"},
+    "fact": {"label": "Fact Sales",        "name": "Fact_Sales_50k_CSV.csv",        "format": "delimited", "delimiter": ","},
+    "cust": {"label": "Customer Master",   "name": "dim_Customer_Master_50k.txt",   "format": "delimited", "delimiter": ","}
+  },
+  "database": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "name": "python_project2",
+    "user": "python_p2_learner",
+    "connect_timeout": 10,
+    "tables": {
+      "dist": "dim_Distributor_sales",
+      "fact": "Fact_Sales",
+      "cust": "dim_Customer_Master",
+      "dm": "dm_Distributor_Sales_Customer_360"
+    }
+  },
+  "execution": {
+    "evidence_max_rows": 5000,
+    "expected_row_counts": {"dist": null, "fact": null, "cust": null},
+    "date_formats": ["%Y-%m-%d", "%m/%d/%Y"],
+    "datetime_formats": ["%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%m/%d/%Y %H:%M:%S", "%m/%d/%Y %H:%M"]
+  },
+  "known_defects": {}
+}
